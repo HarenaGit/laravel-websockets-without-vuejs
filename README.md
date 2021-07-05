@@ -26,13 +26,13 @@
 
         import Echo from '{{asset('js/echo.js')}}'
 
-        import {Pusher} from '{{asset('js/pusher1.js')}}'
+        import {Pusher} from '{{asset('js/pusher.js')}}'
 
         window.Pusher = Pusher
 
         window.Echo = new Echo({
             broadcaster: 'pusher',
-            key: 'server-notification-key',
+            key: 'your-key',
             wsHost: window.location.hostname,
             wsPort: 6001,
             forceTLS: false,
